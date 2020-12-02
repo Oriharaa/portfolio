@@ -19,7 +19,6 @@
 	<link 
 		href="https://fonts.googleapis.com/css2?family=N    oto+Sans+KR:wght@100;300;400;500;700;900&display=swap" 
 		rel="stylesheet" />
-	<!-- font-family: 'Noto Sans KR', sans-serif; -->
 	
 	<link rel="stylesheet" href="style.css" />
 	<link rel="icon" type="image/png" href="imgs/favicon/favicon.png" />
@@ -28,27 +27,29 @@
 </head>
 <body>
 <!-- Navber-->
-	<nav id="nav  bar">
-	<div class="navbar__logo">
-		<img src="imgs/favicon/favicon.png" class="favicon" />
-		<a href="#">Untaek</a>
-	</div>
-	<ul class="navber__menu">
-		<li class="naver__item">Home</li>
-		<li class="naver__item">About</li>
-		<li class="naver__item">Skills</li>
-		<li class="naver__item">My work</li>
-		<li class="naver__item">testimonials</li>
-		<li class="naver__item">Contact</li>
-	</ul>
-</nav>
+	<nav id="navbar">
+		<div class="navbar__logo">
+			<i class="fas fa-cat"></i>
+			<a href="#">Untaek</a>
+		</div>
+		<div class="navbar__menu">
+			<ul class="navbar__menu">
+				<li class="navbar__menu__item active">Home</li>
+				<li class="navbar__menu__item">About</li>
+				<li class="navbar__menu__item">Skills</li>
+				<li class="navbar__menu__item">My work</li>
+				<li class="navbar__menu__item">testimonials</li>
+				<li class="navbar__menu__item">Contact</li>
+			</ul>
+		</div>
+	</nav>
 
 <!--Home-->
 	<section id="home">
 		<img src="imgs/profile2.jpg" alt="Untaek's profile photo" class="home__avatar" />
 		<h1 class="home__title">Hello, <br />I'm Dream Coder</h1>
 		<h2 class="home__description">I will be a passionate developer.</h2>
-		<h2></h2>
+		<button class="home__contact">CONTACT ME</button>
 	</section>
 
 
