@@ -27,11 +27,16 @@ navbarMenu.addEventListener('click', (event)=>{
   if(link == null){
     return;
   }else{
-    console.log(link);
-    const scrollTo = document.querySelector(link);
-    scrollTo.scrollIntoView({behavior: "smooth"});
-  }
-
-
-  
+    scrollIntoviews(link);
+  } 
 });
+
+const contactMe = document.querySelector('.home__contact');
+contactMe.addEventListener('click', (event)=>{
+  scrollIntoviews('#contact');
+});
+
+function scrollIntoviews(selector){
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({behavior:"smooth"});
+}
