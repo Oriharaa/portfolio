@@ -101,11 +101,20 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  /* background-color: var(--color-blue-bottle); */
-  background-color: var(--color-pink-hot);
+  position: fixed;
+  width: 100%;
+  /*background-color: var(--color-blue-bottle);*/
+  /* background-color: var(--color-pink-hot); */
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+  transition: all var(--animation-duration) ease-in;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-pink-hot);
+  padding: 8px;
 }
 
 .navbar__menu {
@@ -144,8 +153,9 @@ p {
 /* Home */
 #home {
   background: url("imgs/background/home-background2.png") center/cover no-repeat;
-  background-size: 1550px 650px;
+  background-size: 1550px 750px;
   padding: 40px;
+  padding-top: 100px;
   text-align: center;
 }
 
