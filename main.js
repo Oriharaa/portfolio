@@ -34,10 +34,36 @@ navbarMenu.addEventListener('click', (event)=>{
   } 
 });
 
+//contact me 클릭시 contact 섹션으로 이동
 const contactMe = document.querySelector('.home__contact');
 contactMe.addEventListener('click', (event)=>{
   scrollIntoviews('#contact');
 });
+
+
+//일정부분 스크롤 될 경우 상단퀵버튼 생성
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', ()=>{
+  if(scrollY > homeHeight/2){
+    arrowUp.classList.add('visible');
+  }else{
+    arrowUp.classList.remove('visible');
+  }
+});
+
+//상단퀵버튼 클릭시 홈섹션 이동
+arrowUp.addEventListener('click', (event)=>{
+  scrollIntoviews('#home');
+}); 
+
+
+
+
+
+
+/*★★★★★★★★★★★★★★★★★★
+ ★★★★★★★★ Function ★★★★★★
+  ★★★★★★★★★★★★★★★★★★*/
 
 function scrollIntoviews(selector){
   const scrollTo = document.querySelector(selector);
