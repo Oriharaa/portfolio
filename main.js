@@ -18,7 +18,7 @@ document.addEventListener('scroll', ()=> {
 const home = document.querySelector('.home__container');
 const homeHeight = home.clientHeight;
   document.addEventListener('scroll', ()=>{
-    homeContainer.style.opacity = 1 - window.scrollY/homeHeight;
+    home.style.opacity = 1 - window.scrollY/homeHeight;
   });
 
 
