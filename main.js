@@ -7,17 +7,20 @@ const navbarHeight = navbar.clientHeight;
 const navbarHeight2 = navbar.getBoundingClientRect().height;
 
 document.addEventListener('scroll', ()=> {
- /*  console.log(`window.scrollY : ${window.scrollY}`);
-  console.log(`navbarHeight : ${navbarHeight}`);
-  console.log(`navbarHeight(ver.2) :  ${navbarHeight2}`); */
-
   if(window.scrollY > navbarHeight){
     navbar.classList.add('navbar--dark');
   }else {
     navbar.classList.remove('navbar--dark');
   }
-
 });
+
+//스크롤을 내릴때 home이 투명해지도록
+const home = document.querySelector('.home__container');
+const homeHeight = home.clientHeight;
+  document.addEventListener('scroll', ()=>{
+    homeContainer.style.opacity = 1 - window.scrollY/homeHeight;
+  });
+
 
 //navbar menu 클릭시 해당 섹션으로 이동
 const navbarMenu = document.querySelector('.navbar__menu');
