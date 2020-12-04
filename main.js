@@ -25,8 +25,7 @@ const homeHeight = home.clientHeight;
 //navbar menu 클릭시 해당 섹션으로 이동
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event)=>{
-  const target = event.target;
-  const link = target.dataset.link;
+  const link = event.target.dataset.link;
   if(link == null){
     return;
   }else{
@@ -65,8 +64,16 @@ const projects = document.querySelectorAll('.project');
     if(filter == null){
       return;
     }
+
+    //버튼 selected
+    const active = document.querySelector('.category__btn.selected');  
+    active.classList.remove('selected');
+
+    const target = 
+      event.target.nodeName === 'BUTTON' ? event.target : event.target.parentNode;
+    target.classList.add('selected'); 
+
     projectContainer.classList.add('anim-out');
-  
     setTimeout(()=>{
       projects.forEach((project) =>{
         if(filter === "*" || filter === project.dataset.type){
@@ -80,8 +87,8 @@ const projects = document.querySelectorAll('.project');
       projectContainer.classList.remove('anim-out');
     }, 300);
 
-
   });
+
 
 
 
