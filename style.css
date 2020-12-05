@@ -522,6 +522,9 @@ p {
 
   .navbar__toggle-btn {
     display: block;
+    top: 18px;
+    right: 16px;
+    font-size: var(--font-medium);
   }
 
   #navbar {
@@ -547,6 +550,7 @@ p {
 
   .section {
     padding: 16px;
+    padding-top: 40px;
   }
 
   .about__majors {
@@ -568,16 +572,52 @@ p {
   .work__categories {
     display: flex;
     justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
   }
   .category__btn {
-    max-width: 120px;
+    width: 100%;
     height: 60px;
-    padding: 0px;
+    padding: 10px;
     padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
 
+  .category__count {
+    position: absolute;
+  }
+  .category__btn.selected .category__count,
+  .category__btn:hover .category__count {
+    top: -30px;
+    left: 26px;
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .testimonial__avatar {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .testimonial__avatar:nth-child(odd),
+  .testimonial__avatar:nth-child(even) {
+    margin-bottom: 10px;
+    margin: 0 0 10px 0;
+  }
+
+  .testimonial__speech-bubble {
+    order: 1;
+  }
+
+  .arrow-up {
+    right: 12px;
+    bottom: 5px;
   }
 }
