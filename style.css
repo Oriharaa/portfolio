@@ -50,6 +50,12 @@ body {
   cursor: default;
 }
 
+/* body {
+  margin: 0;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  cursor: default;
+} */
+
 a {
   text-decoration: none;
   color: var(--color-white);
@@ -97,6 +103,14 @@ p {
   margin: 4px 0px;
 }
 
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
 /* Navbar */
 #navbar {
   display: flex;
@@ -134,8 +148,12 @@ p {
   border: 1px solid transparent;
 }
 
+.navbar__menu__item.active {
+  border: 1px solid var(--color-white);
+}
+
 .navbar__menu__item:hover {
-  background-color: var(--color-indigo);
+  background-color: var(--color-pink);
   border: 1px solid var(--color-white);
   border-radius: var(--size-border-radius);
 }
@@ -152,7 +170,7 @@ p {
 /* Home */
 #home {
   background: url("imgs/background/home-background2.png") center/cover no-repeat;
-  background-size: 1550px 750px;
+  background-size: 100% 800px;
   padding: 40px;
   padding-top: 100px;
   text-align: center;
@@ -467,7 +485,7 @@ p {
 
 /* Contact */
 #contact {
-  background-color: var(--color-pink);
+  background-color: var(--color-pink-hot);
 }
 
 .contact__title,
