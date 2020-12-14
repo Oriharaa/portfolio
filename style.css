@@ -406,7 +406,7 @@ button {
   width: 280px;
   height: 250px;
   margin: 2px;
-  background-color: var(--color-pink);
+  background-color: var(--color-pink-hot);
 }
 
 .project.invisible {
