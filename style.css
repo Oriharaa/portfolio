@@ -187,7 +187,8 @@ button {
   width: 260px;
   height: 260px;
   background: url("imgs/profile2.jpg");
-  background-size: 260px 260px;
+  background-position: center;
+  background-size: cover;
   border-radius: 50%;
   border: 2px solid var(--color-light-white);
 }
