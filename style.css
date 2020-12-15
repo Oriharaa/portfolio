@@ -289,7 +289,7 @@ button {
 
 /* skills */
 #skills {
-  background-color: var(--color-yellow);
+  background-color: var(--color-light-white);
 }
 
 .skillset {
@@ -407,7 +407,7 @@ button {
   width: 280px;
   height: 250px;
   margin: 2px;
-  background-color: var(--color-pink-hot);
+  background-color: var(--color-light-white);
 }
 
 .project.invisible {
